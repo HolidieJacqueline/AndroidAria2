@@ -7,7 +7,7 @@
 .cache
 .gradle
 
-local.properties
+
 
 # .idea and *.iml are now shared per https://intellij-support.jetbrains.com/entries/23393067
 *.ipr
