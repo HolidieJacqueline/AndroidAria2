@@ -41,7 +41,7 @@ ndk.dir=modify_this_path/android-ndk-r12b
 ==========
 
 ````bash
-git clone --recursive "https://github.com/Alexander--/aria2-android"
+git clone --recursive "https://github.com/HolidieJacqueline/AndroidAria2.git"
 cd aria2-android
 export ANDROID_NDK="/path/to/android-ndk"
 echo "ndk.dir=/path/to/android-ndk" > local.properties
