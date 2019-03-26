@@ -41,7 +41,7 @@ sdk.dir=modify_this_path/Android/Sdk
 ndk.dir=modify_this_path/android-ndk-r12b
 ````bash
 git clone --recursive "https://github.com/HolidieJacqueline/AndroidAria2.git"
-cd aria2-android
+cd AndroidAria2
 export ANDROID_NDK="/path/to/android-ndk"
 echo "ndk.dir=/path/to/android-ndk" > local.properties
 ./gradlew renameExecutables
