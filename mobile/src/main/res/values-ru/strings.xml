@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!--preferences-->
+  <string name="enable_aria2_service">Запуск aria2</string>
+  <string name="show_output">Отображать вывод aria2</string>
+  <string name="download_dir">Каталог для загрузок</string>
+  <string name="download_dir_summary">Также используется для вспомогательных файлов</string>
+  <string name="space_available">%s свободно</string>
+  <string name="show_output_summary">Показ сообщений после остановки</string>
+  <string name="notifications">Уведомления</string>
+  <string name="nf_stopped">При остановке</string>
+  <string name="nf_stopped_summary">Могут содержать сообщения об ошибках</string>
+  <string name="nf_persistent">При работе</string>
+  <string name="nf_persistent_summary">Требуется для сохранения процесса в фоне</string>
+  <string name="host">Хост</string>
+  <string name="port">Порт</string>
+  <string name="get_from_market">Скачать из Google Play</string>
+  <string name="official_site">Сайт aria2 (англ.)</string>
+  <string name="license">Лицензия</string>
+  <string name="view_source_code">Исходный код</string>
+  <string name="view_source_code_summary">Исходный код Android-порта aria2 на Github</string>
+  <string name="pref_header_frontend">Графический интерфейс</string>
+  <string name="pref_header_other">О программе</string>
+  <!--messages-->
+  <string name="will_start_later">Для работы aria2 требуется сетевое подключение</string>
+  <!--notifications-->
+  <string name="aria2_has_stopped">Процесс aria2 завершен</string>
+  <string name="aria2_has_failed_to_start">Запустить aria2 не удалось</string>
+  <string name="all_finished">Загрузки завершены</string>
+  <string name="there_are_unfinished">Загрузки в процессе</string>
+  <string name="there_may_have_been_issues">В ходе работы могли возникнуть проблемы</string>
+  <string name="expand_nf_to_see_details">Подробности — в развернутом уведомлении</string>
+  <string name="other_err">ошибка при добавлении загрузки</string>
+  <string name="download_err">ошибка в ходе загрузки</string>
+  <string name="explanation">
+В ходе работы aria2 могли возникнуть одна и более проблем. Последняя из них: %s. Вы можете воспользоваться фронтендом для более детального отчёта.</string>
+  <string name="use_ate_title">Интеграция с ATE</string>
+  <string name="use_ate_summary">Отображать вывод в ATE</string>
+  <string name="ate">Эмулятор терминала</string>
+  <string name="open_ate">Открыть эмулятор терминала</string>
+  <string name="open_transdroid">Запустить Transdroid</string>
+  <string name="is_not_installed">%s не установлен</string>
+  <string name="is_installed">%s установлен</string>
+  <string name="warning_inacccessible_dir">Выбранный каталог не доступен на запись!</string>
+  <string name="error_inaccessible_dir">Каталог не доступен</string>
+  <string name="error_empty_dir">Укажите корректный каталог для загрузок</string>
+  <string name="error_service_failure">Запустить сервис aria2 не удалось</string>
+  <string name="network">Сеть</string>
+  <string name="ip_or_if_name">IP или имя интерфейса</string>
+  <string name="if_sel_header">Не выбран. Варианты:\u0020</string>
+  <string name="unable_to_get_if_info">ошибка получения данных</string>
+  <string name="no_address">адрес не известен</string>
+  <string name="no_connection">нет сети</string>
+  <string name="use_wakelock">Держать процессор активным</string>
+  <string name="use_wakelock_summary">Предотвращает сон CPU на время работы aria2</string>
+  <string name="network_name">Сетевой интерфейс</string>
+  <string name="network_name_summary">Устройство, IP или имя хоста</string>
+  <string name="iface_not_set_summary">Выберите интерфейс!</string>
+  <string name="iface_auto">Использовать настройки Android</string>
+  <string name="iface_not_set">Позволить aria2 сделать выбор</string>
+  <string name="iface_hardcoded">Использовать указанный интерфейс</string>
+  <string name="outside_access_summary">Ознакомьтесь с документацией!</string>
+  <string name="token_too_short">Недостаточно длинный пароль! Для открытия сетевого доступа к aria2 установите токен длиной от 6 символов</string>
+  <string name="network_choice">Выбор сети</string>
+  <string name="network_choice_none_summary">@string/iface_not_set</string>
+  <string name="network_choice_auto_summary">@string/iface_auto</string>
+  <string name="outside_access">Доступ извне</string>
+  <string name="use_browser">Использовать браузер</string>
+  <string name="use_browser_summary">Открывать фронтенд во внешнем браузере</string>
+</resources>

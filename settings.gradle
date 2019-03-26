@@ -1,0 +1,3 @@
+include ':mobile', ':libtermexec'
+
+project(':libtermexec').projectDir = "$rootDir/ate/libtermexec" as File

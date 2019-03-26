@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+            android:enabled="false"
+            android:defaultValue="false"
+            android:key="@string/service_enable_pref"
+            android:title="@string/enable_aria2_service" />
+
+    <net.sf.aria2.util.SanePreference
+            android:defaultValue=""
+            android:key="@string/download_dir_pref"
+            android:title="@string/download_dir"
+            android:summary="@string/download_dir_summary"/>
+
+    <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/show_output_pref"
+            android:title="@string/show_output"
+            android:summary="@string/show_output_summary"/>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/use_wakelock_pref"
+        android:title="@string/use_wakelock"
+        android:summary="@string/use_wakelock_summary"/>
+
+    <PreferenceCategory android:title="@string/notifications">
+        <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="@string/show_nf_stopped_pref"
+                android:title="@string/nf_stopped"
+                android:summary="@string/nf_stopped_summary"/>
+
+        <CheckBoxPreference
+                android:enabled="false"
+                android:defaultValue="true"
+                android:key="foobar"
+                android:title="@string/nf_persistent"
+                android:summary="@string/nf_persistent_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/network">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/outside_access_pref"
+            android:title="@string/outside_access"
+            android:summary="@string/outside_access_summary"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_net_choice_option_text"
+            android:entryValues="@array/pref_net_choice_options"
+            android:key="@string/network_choice_strategy_pref"
+            android:title="@string/network_choice"
+            android:summary=""/>
+
+        <net.sf.aria2.util.SanePreference
+            android:defaultValue=""
+            android:key="@string/network_interface_pref"
+            android:title="@string/network_name"
+            android:dialogMessage="@string/ip_or_if_name"
+            android:summary="@string/network_name_summary"/>
+    </PreferenceCategory>
+</PreferenceScreen>

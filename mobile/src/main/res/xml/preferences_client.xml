@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Builtin frontend">
+        <Preference
+            android:key="@string/open_browser_pref"
+            android:title="Open web frontend">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="net.sf.aria2.JsFrontendActivity"
+                android:targetPackage="net.sf.aria2"/>
+        </Preference>
+
+        <CheckBoxPreference
+            android:key="@string/external_browser_pref"
+            android:title="@string/use_browser"
+            android:summary="@string/use_browser_summary"
+            android:defaultValue="@bool/prefer_external_browser"
+            android:enabled="@bool/allow_builtin_webview"
+            android:disableDependentsState="true"
+            >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/transdroid">
+
+        <Preference
+                android:key="@string/transdroid_app_pref"
+                android:title="@string/open_transdroid">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="@string/transdroid_link"/>
+        </Preference>
+
+        <Preference
+                android:key="host"
+                android:title="@string/host"
+                android:summary="localhost"/>
+
+        <Preference
+                android:key="port"
+                android:title="@string/port"
+                android:summary="6800"/>
+
+        <net.sf.aria2.util.SanePreference
+            android:defaultValue="@string/rpc_secret"
+            android:key="@string/token_pref"
+            android:title="@string/secret_token"
+            android:summary="Must be set in frontend"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/ate">
+        <Preference
+                android:key="@string/ate_app_pref"
+                android:title="@string/open_ate">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="@string/ate_link"/>
+        </Preference>
+
+        <CheckBoxPreference
+                android:key="@string/use_ate_pref"
+                android:title="@string/use_ate_title"
+                android:summary="@string/use_ate_summary"
+                android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
