@@ -32,7 +32,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 public final class JsFrontendActivity extends Activity {
-    private static final String START_PAGE = "file:///android_asset/webui/index.html";
+    private static final String START_PAGE = "file:///android_asset/webui-aria2/index.html";
 
     private ValueCallback uploadMessage;
 

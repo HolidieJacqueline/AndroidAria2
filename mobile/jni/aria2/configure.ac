@@ -230,7 +230,7 @@ if test "x$with_libz" = "xyes"; then
     save_LIBS=$LIBS
     CPPFLAGS="$CPPFLAGS $ZLIB_CFLAGS"
     LIBS="$ZLIB_LIBS $LIBS"
-    AC_CHECK_FUNCS([gzbuffer gzsetparams])
+    AC_CHECK_FUNCS([gzsetparams])
     CPPFLAGS=$save_CPPFLAGS
     LIBS=$save_LIBS
   fi

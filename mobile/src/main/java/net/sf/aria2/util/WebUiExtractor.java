@@ -18,7 +18,7 @@ import java.io.OutputStream;
  * A simple asset extraction routine with versions for pre- and post-Lollipop IO APIs.
  */
 public final class WebUiExtractor {
-    public static final String ASSET_DIR = "webui";
+    public static final String ASSET_DIR = "webui-aria2";
     public static final String DIR_NAME = ".aria2-webui";
     public static final String VER_FILE = "version";
 

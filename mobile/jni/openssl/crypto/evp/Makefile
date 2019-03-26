@@ -247,13 +247,15 @@ e_camellia.o: ../../include/openssl/opensslv.h ../../include/openssl/ossl_typ.h
 e_camellia.o: ../../include/openssl/safestack.h ../../include/openssl/stack.h
 e_camellia.o: ../../include/openssl/symhacks.h ../modes/modes_lcl.h
 e_camellia.o: e_camellia.c evp_locl.h
-e_cast.o: ../../e_os.h ../../include/openssl/bio.h
-e_cast.o: ../../include/openssl/buffer.h ../../include/openssl/crypto.h
-e_cast.o: ../../include/openssl/e_os2.h ../../include/openssl/err.h
-e_cast.o: ../../include/openssl/lhash.h ../../include/openssl/opensslconf.h
+e_cast.o: ../../e_os.h ../../include/openssl/asn1.h ../../include/openssl/bio.h
+e_cast.o: ../../include/openssl/buffer.h ../../include/openssl/cast.h
+e_cast.o: ../../include/openssl/crypto.h ../../include/openssl/e_os2.h
+e_cast.o: ../../include/openssl/err.h ../../include/openssl/evp.h
+e_cast.o: ../../include/openssl/lhash.h ../../include/openssl/obj_mac.h
+e_cast.o: ../../include/openssl/objects.h ../../include/openssl/opensslconf.h
 e_cast.o: ../../include/openssl/opensslv.h ../../include/openssl/ossl_typ.h
 e_cast.o: ../../include/openssl/safestack.h ../../include/openssl/stack.h
-e_cast.o: ../../include/openssl/symhacks.h ../cryptlib.h e_cast.c
+e_cast.o: ../../include/openssl/symhacks.h ../cryptlib.h e_cast.c evp_locl.h
 e_des.o: ../../e_os.h ../../include/openssl/asn1.h ../../include/openssl/bio.h
 e_des.o: ../../include/openssl/buffer.h ../../include/openssl/crypto.h
 e_des.o: ../../include/openssl/des.h ../../include/openssl/des_old.h

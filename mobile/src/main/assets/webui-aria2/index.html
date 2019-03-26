@@ -3,6 +3,7 @@
 
 <!-- {{{ head -->
 <head>
+  <link rel="icon" href="favicon.ico" />
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,7 +12,7 @@
   <title ng-bind="$root.pageTitle">Aria2 WebUI</title>
 
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/flag-icon.min.css">
 
   <link rel="stylesheet" href="css/style.css">
@@ -100,13 +101,11 @@
       <a class="navbar-brand"><span class="fa fa-fw fa-arrow-circle-down"></span> {{ name }}</a>
     </div>
 
-<!--
     <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
         <input class="form-control" type="text" placeholder="{{ 'Search' | translate }}" ng-model="downloadFilter" autocomplete="off" ng-change="onDownloadFilter()" />
       </div>
     </form>
--->
 
     <!-- {{{ Nav menu -->
     <div class="collapse navbar-collapse" collapse="collapsed">

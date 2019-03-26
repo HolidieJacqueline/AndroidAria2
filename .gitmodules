@@ -14,5 +14,5 @@
 	path = ate
 	url = git@github.com:jackpal/Android-Terminal-Emulator.git
 [submodule "webui"]
-	path = webui
+	path = mobile/src/main/assets/webui-aria2
 	url = git@github.com:chdir/webui-aria2.git

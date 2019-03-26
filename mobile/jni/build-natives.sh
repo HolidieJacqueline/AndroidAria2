@@ -55,7 +55,7 @@ sed -i '/\#undef EAI_ADDRFAMILY/a \#undef EAI_NODATA' src/getaddrinfo.h
     CPPFLAGS="-DHAVE_GETTIMEOFDAY=1 -DHAVE_GETADDRINFO=1" \
     LDFLAGS="-L$A2_TOOLCHAIN/lib $LDFLAGS" \
     PKG_CONFIG_LIBDIR="$A2_ROOT/lib/pkgconfig" \
-    ZLIB_LIBS="-L/usr/local/lib/ -lz" \
+    ZLIB_LIBS="-I/usr/local/include/ -L/usr/local/lib/ -lz" \
     ZLIB_CFLAGS="-I$A2_TOOLCHAIN/sysroot/usr/include"
 
 make clean && make -j4

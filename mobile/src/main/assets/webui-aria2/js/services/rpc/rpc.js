@@ -96,9 +96,6 @@ function(syscall, globalTimeout, alerts, utils, rootScope, uri, authconf, filter
     });
 
     var error = function() {
-      if (currentConf === cookieConf) {
-        utils.setCookie('aria2conf', '');
-      }
       needNewConnection = true;
       var ind = configurations.indexOf(currentConf);
       if (ind != -1) configurations.splice(ind, 1);
