@@ -36,10 +36,12 @@ the process in one click. This project attempts to fix those issues.
 
 Building from sources
 ==========
-
+modify local.properties, 
+sdk.dir=modify_this_path/Android/Sdk
+ndk.dir=modify_this_path/android-ndk-r12b
 ````bash
-git clone --recursive "https://github.com/Alexander--/aria2-android"
-cd aria2-android
+git clone --recursive "https://github.com/HolidieJacqueline/AndroidAria2.git"
+cd AndroidAria2
 export ANDROID_NDK="/path/to/android-ndk"
 echo "ndk.dir=/path/to/android-ndk" > local.properties
 ./gradlew renameExecutables
