@@ -35,6 +35,9 @@ lacks integration with Android system; no notifications, no sane defaults, no wa
 the process in one click. This project attempts to fix those issues.
 
 Building from sources
+modify local.properties, 
+sdk.dir=modify_this_path/Android/Sdk
+ndk.dir=modify_this_path/android-ndk-r12b
 ==========
 
 ````bash
